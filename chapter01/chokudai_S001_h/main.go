@@ -24,7 +24,7 @@ func main() {
 		idx := sort.Search(n+1, func(j int) bool {
 			return a[i] <= dp[j]
 		})
-		if idx == 0 || dp[idx] < a[i] {
+		if idx == 0 {
 			continue
 		}
 		dp[idx] = a[i]
